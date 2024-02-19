@@ -1,0 +1,44 @@
+mat-toolbar.tiny-information-section {
+  font-size: 15px;
+  font-weight: 400;
+  height: 3em;
+  background-color: #0b2239;
+  color: white;
+}
+mat-toolbar.tiny-information-section .section-email {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 1rem;
+}
+mat-toolbar.tiny-information-section .section-phone {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+mat-toolbar.tiny-information-section .spacer {
+  flex: 1 1 auto;
+}
+mat-toolbar.tiny-information-section .information-flag .flag{
+    width: 2rem;
+    height: auto;
+}
+mat-toolbar.tiny-information-section .information-flag .british-flag{
+    margin-left: 10px;
+}
+mat-toolbar.tiny-information-section .information-flag{
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  mat-toolbar.tiny-information-section{
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+  }
+  mat-toolbar.tiny-information-section .section-email {
+    margin-right: 0;
+  }
+}
